@@ -6,9 +6,9 @@ export default function Main() {
     const [count, setCount] = useState(1)
     const [allMemes, setAllMemes] = useState([])
     const [meme, setMeme] = useState({
-        topText:"One does not simply",
-        bottomText: "Walk into Mordor",
-        memeImg: "/jake-meme.jpg"
+        topText:"",
+        bottomText: "",
+        memeImg: ""
     })
 
     useEffect(()=>{
@@ -44,7 +44,7 @@ export default function Main() {
             <div className="labels">
             <label> Top Text
                 <input type="text"
-                placeholder="One does not simply"
+                placeholder="e.g One does not simply"
                 onChange={handleChange}
                 value={meme.topText}
                 name="topText"
@@ -54,7 +54,7 @@ export default function Main() {
                 <input 
                 type="text"
                 onChange={handleChange}
-                placeholder="Walk into Mordor"
+                placeholder="e.g Walk into Mordor"
                 value={meme.bottomText}
                 name="bottomText"
                 />

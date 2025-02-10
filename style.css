@@ -19,11 +19,11 @@ header{
 
 .logo img{
     width: 100px;
-    margin-left: 20px;
 }
 
 .logo p{
     font-weight: 600;
+    margin-left: 20px;
     font-size: 15px;
     color: white;
 }
@@ -98,6 +98,11 @@ main button:hover{
     height: fit-content;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.meme img:not([src]):not([srcset]),
+.meme img[src=""] {
+  display: none;
 }
 
 .meme .caption{
