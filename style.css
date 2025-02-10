@@ -19,11 +19,11 @@ header{
 
 .logo img{
     width: 100px;
+    margin-left: 20px;
 }
 
 .logo p{
     font-weight: 600;
-    margin-left: 20px;
     font-size: 15px;
     color: white;
 }
